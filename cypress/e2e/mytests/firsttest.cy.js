@@ -57,7 +57,7 @@ describe('my 1st test', () => {
           
     })
 
-    it('7th test', () =>{
+    it('7th tests', () =>{
         cy.get('.new-todo')
         .type('Get some coffee', {delay: 100})
         .type('{selectall}{del}')
