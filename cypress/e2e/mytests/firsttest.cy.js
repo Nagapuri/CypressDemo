@@ -43,9 +43,9 @@ describe('my 1st test', () => {
           .children('input')
           .check()
 
-          cy.wait(10000)
+          cy.wait(5000)
           cy.contains('Walk the dog')
-          .parents('li',{timeout: 10000})
+          .parents('li',{timeout: 5000})
           .should('have.class','completed')
 
     })
