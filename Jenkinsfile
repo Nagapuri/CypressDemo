@@ -10,7 +10,7 @@ pipeline {
             }
             stage('e2e Tests') {
                 steps {
-               sh 'npx cypress run --spec "cypress/e2e/mytests/*"'
+               sh 'npx cypress run --spec "cypress/e2e/mytests/*" --reporter mochawesome'
            }
        }
     }
